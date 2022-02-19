@@ -2,7 +2,7 @@
 import java.util.Arrays;
 
 public class anagram {
-    static void isAnagram(String str1, String str2) {
+    public static boolean isAnagram(String str1, String str2) {
         String s1 = str1.replaceAll("\\s", "");
         String s2 = str2.replaceAll("\\s", "");
         boolean status = true;
@@ -16,14 +16,16 @@ public class anagram {
             status = Arrays.equals(ArrayS1, ArrayS2);
         }
         if (status) {
-            System.out.println(s1 + " and " + s2 + " are anagrams");
+            return true;
+            //System.out.println(s1 + " and " + s2 + " are anagrams");
         } else {
-            System.out.println(s1 + " and " + s2 + " are not anagrams");
+            return false;
+            //System.out.println(s1 + " and " + s2 + " are not anagrams");
         }
     }
 
-    public static void main(String[] args) {
-        isAnagram("abcd", "dcba");
+   // public static void main(String[] args) {
+       // isAnagram("abcd", "dcba");
 
-    }
+   // }
 }
