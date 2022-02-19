@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class occurs{
-    public static void occu(String str) {
+    public static HashMap <Character, Integer> occu(String str) {
 
         HashMap <Character, Integer> hMap = new HashMap<>();
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -12,6 +12,7 @@ public class occurs{
                 hMap.put(str.charAt(i),1);
             }
         }
-        System.out.println(hMap);
+
+        return hMap;
     }
 }

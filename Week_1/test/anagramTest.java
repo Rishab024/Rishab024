@@ -12,8 +12,6 @@ public class anagramTest {
 
     }
 
-
-
     @Test
     public void isAnagram() {
 
